@@ -1,8 +1,9 @@
 require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config()
 
 // Example Only. Please use MPC or env
-const PRIVATE_KEY = "xx"; 
-const INFURA_API_KEY = "xx";
+const PRIVATE_KEY = process.env.PRIVATE_KEY; 
+const INFURA_API_KEY = process.env.INFURA_API_KEY;
 
 module.exports = {
   solidity: "0.8.24",
